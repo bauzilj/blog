@@ -1,21 +1,34 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#meu_logo {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: rgb(110, 129, 183);
+}
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     min-height: 100vh;
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/fond.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
-nav{
+nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 }
-nav ul{
+
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -23,11 +36,11 @@ nav ul{
     align-items: center;
 }
 
-nav li{
+nav li {
     height: 50px;
 }
 
-nav a{
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -36,15 +49,15 @@ nav a{
     color: black;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #f0f0f0;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -59,30 +72,81 @@ nav li:first-child{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.sidebar li{
+
+.sidebar li {
     width: 100%;
 }
 
-.sidebar a{
+.sidebar a {
     width: 100%;
 }
 
-.menu-button{
+.menu-button {
     display: none;
 }
 
-@media(max-width:800px){
-    .hideOnMobile{
+@media(max-width:800px) {
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
-}
+    }
 }
 
 
-@media(max-width: 400px){
-    .sidebar{
+@media(max-width: 400px) {
+    .sidebar {
         width: 100%;
     }
 }
+
+#title {
+    text-align: center;
+    color: rgb(230, 230, 222);
+    padding-top: 200px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+
+}
+
+#ndTitle{
+    margin-top: 50px;;
+    text-align: center;
+    color: whitesmoke;
+    font-family:cursive;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px red;
+}
+
+.ex{
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.ex a{
+    background-color: yellow;
+    padding: 5px 45px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+.ex a:hover{
+    background-color: red;
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+
